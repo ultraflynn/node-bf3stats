@@ -15,5 +15,7 @@
     "bf3stats"
   ],
   "author": "Matt Biggin",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+  }
 }
