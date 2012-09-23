@@ -1,0 +1,19 @@
+{
+  "name": "node-bf3stats",
+  "version": "0.0.0",
+  "description": "BF3 Stats API for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ultraflynn/node-bf3stats.git"
+  },
+  "keywords": [
+    "bf3",
+    "bf3stats"
+  ],
+  "author": "Matt Biggin",
+  "license": "BSD"
+}
