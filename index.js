@@ -3,9 +3,6 @@
 //
 var bf3stats = require("./lib/bf3stats");
 
-function InvalidPlatformException() {
-}
-
 exports.platform = function(platform) {
 	if (!(platform === "PC" || 
 		platform === "360" || platform === 360 ||
