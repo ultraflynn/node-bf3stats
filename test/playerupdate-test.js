@@ -1,6 +1,6 @@
-var bf3stats = require("../index.js").platform(360);
+var bf3stats = require("../index.js").platform(360, "dqdeMJPCRn");
 
-var time = null;
+var time = new Date().getTime() / 1000;
 var player = "ultraflynn";
 var type = "direct";
 

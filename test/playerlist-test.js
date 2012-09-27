@@ -7,6 +7,6 @@ bf3stats.playerlist(players, opt, function(err, list, failed) {
 	if (err) {
 		console.log(err);
 	} else {
-		console.log("list", list, "failed", failed);
+		console.log("list", list, "\nfailed", failed);
 	}
 });
