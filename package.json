@@ -1,6 +1,6 @@
 {
   "name": "node-bf3stats",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "BF3 Stats API for Node.js",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,5 @@
     "bf3stats"
   ],
   "author": "Matt Biggin",
-  "license": "BSD",
-  "dependencies": {
-  }
+  "license": "BSD"
 }
