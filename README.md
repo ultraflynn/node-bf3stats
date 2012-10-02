@@ -4,6 +4,10 @@ node-bf3stats
 A BF3Stats API implementation for Node.js which provides access to all
 the API functions and includes fault tolerance, error handling and caching.
 
+[github.com/ultraflynn/node-bf3stats](https://github.com/ultraflynn/node-bf3stats#readme "node-bf3stats")
+
+[npmjs.org/package/node-bf3stats](https://npmjs.org/package/node-bf3stats "npm install node-bf3stats")
+
 Overview
 --------
 The BF3Stats API provides the following functions:
