@@ -34,10 +34,25 @@ The unsigned functions are all now available for use. They provide
 appropriate error handling for when the BF3Stats API is either running
 slowly or is returning Server 500 errors.
 
-Future Enhancements
--------------------
-- Implement the signed functions
-- Handle the BF3Stats API being completely down
-- Implement some caching for when the API is running slowly or down
-- Provide a streaming interface over player and server data this enabling
-  a client to listen for changes.
+Versioning
+----------
+I have yet to tag a version but that's only because I've forgotten to so
+far. The current version released to npm is 0.1.0 so when the first tag
+I create will be 0.1.1. From that point on I shall tag in github when I
+release a version to npm.
+
+The versioning strategy is pretty standard, odd releases are unstable, even
+are stable. Thus the first stable release will be 0.2.0
+
+The roadmap of releases looks like this:
+
+_0.2.0_
+- Full support for the API (both signed and unsigned action)
+- Caching
+- Error handling
+
+_0.4.0_
+- Retry support during signed action
+
+_0.6.0_
+- Streaming interface over the standard API
