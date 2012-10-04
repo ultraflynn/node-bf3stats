@@ -38,6 +38,29 @@ The unsigned functions are all now available for use. They provide
 appropriate error handling for when the BF3Stats API is either running
 slowly or is returning Server 500 errors.
 
+Caching
+-------
+The rationale for the caching is that there are occasions when the BF3Stats
+API is either down, responding with a Server 500 or just very slow. To
+mitigate this node-bf3stats offers some protection against these events.
+Firstly it's error handling is unified, regardless of the error condition
+it will be communicated back to the caller in the _err_ object in the
+callback. Secondly, by default, the API actively caches the data.
+
+There are 2 timeouts at play here:
+# A responsiveness timeout - this provides feedback that the request is
+  taking longer than the caller would like. Default is 2 secs which seems
+  reasonable for a web request.
+# A platform timeout - the hosting platform will most likely set a
+  maxmimum run time for a request. For Heroku this is 30 secs. Should a
+  request reach that timeout (or close to) it should be cancelled. Default
+  for this value is 20 secs.
+
+Both default values can be changed of course.
+
+Caching uses these timeouts and the results of calls to retain the data from
+the last successful call.
+
 Versioning
 ----------
 I have yet to tag a version but that's only because I've forgotten to so
@@ -57,6 +80,7 @@ _0.2.0_
 
 _0.4.0_
 - Retry support during signed action
+- Retry support on failed API requests
 
 _0.6.0_
 - Streaming interface over the standard API
