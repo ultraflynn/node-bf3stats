@@ -48,11 +48,11 @@ it will be communicated back to the caller in the _err_ object in the
 callback. Secondly, by default, the API actively caches the data.
 
 There are 2 timeouts at play here:
-# A responsiveness timeout - this provides feedback that the request is
+- A responsiveness timeout - this provides feedback that the request is
   taking longer than the caller would like. Default is 2 secs which seems
   reasonable for a web request.
-# A platform timeout - the hosting platform will most likely set a
-  maxmimum run time for a request. For Heroku this is 30 secs. Should a
+- A platform timeout - the hosting platform will most likely set a
+  maximum run time for a request. For Heroku this is 30 secs. Should a
   request reach that timeout (or close to) it should be cancelled. Default
   for this value is 20 secs.
 
