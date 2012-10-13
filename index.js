@@ -2,12 +2,13 @@
 // BF3 Stats API for Node.js
 //
 var core = require("./lib/bf3stats");
+var cache = require("./lib/bf3stats-cache");
 
-exports.platform = function(platform, ident) {
+exports.platform = function(platform, ident, cacheStrategy) {
 	if (!(platform === "PC" || 
 		platform === "360" || platform === 360 ||
 		platform === "ps3")) {
 		throw new Error("Invalid platform '" + platform + "'. Options are PC, 360 or ps3.");
 	}
-	return new core.createFor(platform, ident);
+	return new core.createFor(platform, ident, cache.newInstance(cacheStrategy));
 };
