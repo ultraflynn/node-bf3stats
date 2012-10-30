@@ -2,7 +2,7 @@
   "name": "node-bf3stats",
   "version": "0.1.0",
   "description": "BF3 Stats API for Node.js",
-  "main": "index.js",
+  "main": "./lib/node-bf3stats",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   "author": "Matt Biggin",
   "license": "BSD",
   "dependencies": {
-    "winston": "~0.6.2"
+    "winston": "~0.6.2",
+    "underscore": "~1.4.0"
   }
 }
