@@ -18,7 +18,7 @@
   "license": "BSD",
   "dependencies": {
     "winston": "~0.6.2",
-    "underscore": "~1.12.1",
+    "underscore": "~1.13.8",
     "carbine": "~0.1.0"
   }
 }
